@@ -62,4 +62,105 @@ class RateServiceTests {
         assert(rateOutputDTO.getComponent().getTransaction() == 1);
     }
 
+
+    @Test
+    public void rateTest1() throws Exception {
+        RateDTO rateDTO = new RateDTO();
+        rateDTO.setEnergy(0);
+        rateDTO.setTime(0);
+        rateDTO.setTransaction(0);
+
+        CdrDTO cdrDTO = new CdrDTO();
+        cdrDTO.setMeterStart(0L);
+        cdrDTO.setMeterStop(0L);
+        cdrDTO.setTimestampStart(null);
+        cdrDTO.setTimestampStop(null);
+
+        RateInputDTO rateInputDTO = new RateInputDTO();
+        rateInputDTO.setRate(rateDTO);
+        rateInputDTO.setCdr(cdrDTO);
+
+        String content = objectMapper.writeValueAsString(rateInputDTO);
+        ResultActions resultActions = mockMvc.perform(post("/rate")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(content)).andExpect(status().isBadRequest());
+
+    }
+
+
+    @Test
+    public void rateTest2() throws Exception {
+        // if meter start is more than or equal to meter stop
+        RateDTO rateDTO = new RateDTO();
+        rateDTO.setEnergy(0.3f);
+        rateDTO.setTime(2);
+        rateDTO.setTransaction(1);
+
+        CdrDTO cdrDTO = new CdrDTO();
+        cdrDTO.setMeterStart(1215230L);
+        cdrDTO.setMeterStop(1215230L);
+        cdrDTO.setTimestampStart("2021-04-05T10:04:00Z");
+        cdrDTO.setTimestampStop("2021-04-05T11:27:00Z");
+
+        RateInputDTO rateInputDTO = new RateInputDTO();
+        rateInputDTO.setRate(rateDTO);
+        rateInputDTO.setCdr(cdrDTO);
+
+        String content = objectMapper.writeValueAsString(rateInputDTO);
+        ResultActions resultActions = mockMvc.perform(post("/rate")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(content)).andExpect(status().isBadRequest());
+
+    }
+
+    @Test
+    public void rateTest3() throws Exception {
+        // if timestamp start is more than or equal to meter stop
+        RateDTO rateDTO = new RateDTO();
+        rateDTO.setEnergy(0.3f);
+        rateDTO.setTime(2);
+        rateDTO.setTransaction(1);
+
+        CdrDTO cdrDTO = new CdrDTO();
+        cdrDTO.setMeterStart(1204307L);
+        cdrDTO.setMeterStop(1215230L);
+        cdrDTO.setTimestampStart("2022-04-05T11:27:00Z");
+        cdrDTO.setTimestampStop("2021-04-05T11:27:00Z");
+
+        RateInputDTO rateInputDTO = new RateInputDTO();
+        rateInputDTO.setRate(rateDTO);
+        rateInputDTO.setCdr(cdrDTO);
+
+        String content = objectMapper.writeValueAsString(rateInputDTO);
+        ResultActions resultActions = mockMvc.perform(post("/rate")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(content)).andExpect(status().isBadRequest());
+
+    }
+
+    @Test
+    public void rateTest4() throws Exception {
+        // different timestamp format
+        RateDTO rateDTO = new RateDTO();
+        rateDTO.setEnergy(0.3f);
+        rateDTO.setTime(2);
+        rateDTO.setTransaction(1);
+
+        CdrDTO cdrDTO = new CdrDTO();
+        cdrDTO.setMeterStart(1204307L);
+        cdrDTO.setMeterStop(1215230L);
+        cdrDTO.setTimestampStart("2021.04.05.11.27");
+        cdrDTO.setTimestampStop("2021.04.05.10.04");
+
+        RateInputDTO rateInputDTO = new RateInputDTO();
+        rateInputDTO.setRate(rateDTO);
+        rateInputDTO.setCdr(cdrDTO);
+
+        String content = objectMapper.writeValueAsString(rateInputDTO);
+        ResultActions resultActions = mockMvc.perform(post("/rate")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(content)).andExpect(status().isBadRequest());
+
+    }
+
 }

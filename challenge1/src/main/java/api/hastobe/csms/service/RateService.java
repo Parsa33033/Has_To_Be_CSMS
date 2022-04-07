@@ -5,6 +5,7 @@ import api.hastobe.csms.service.dto.CdrDTO;
 import api.hastobe.csms.service.dto.RateDTO;
 import api.hastobe.csms.service.dto.RateInputDTO;
 import api.hastobe.csms.service.dto.RateOutputDTO;
+import api.hastobe.csms.service.exception.ValueProvidedNotCorrectException;
 import api.hastobe.csms.service.mapper.RateMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,14 +41,40 @@ public class RateService {
 
     public RateOutputDTO calculateRates(RateInputDTO rateInputDTO) {
 
-        // extract rate and cdr info
-        Rate rate = rateMapper.toEntity(rateInputDTO.getRate());
+        RateDTO rateDTO = rateInputDTO.getRate();
         CdrDTO cdrDTO = rateInputDTO.getCdr();
+        if (rateDTO == null || cdrDTO == null)
+            throw new ValueProvidedNotCorrectException();
+
+        float energy = rateDTO.getEnergy();
+        float time = rateDTO.getTime();
+        float transaction = rateDTO.getTransaction();
+
+        long meterStart = cdrDTO.getMeterStart();
+        long meterStop = cdrDTO.getMeterStop();
+        String timestampStartStr = cdrDTO.getTimestampStart();
+        String timestampStopStr = cdrDTO.getTimestampStop();
+
+        if (energy <= 0 || time <= 0 || transaction <= 0)
+            throw new ValueProvidedNotCorrectException("energy, time, or transaction values are invalid!");
+
+        if (meterStart == 0 || meterStop == 0 || meterStart >= meterStop)
+            throw new ValueProvidedNotCorrectException("meter values are either zero or the value for " +
+                    "meter start is more than meter stop!");
+
+        if (timestampStartStr == null || timestampStopStr == null)
+            throw new ValueProvidedNotCorrectException("timestamp is null!");
+
+        // extract rate and cdr info
+        Rate rate = rateMapper.toEntity(rateDTO);
 
         // calculate meter and time usage
-        Long meter = cdrDTO.getMeterStop() - cdrDTO.getMeterStart();
-        Instant timestampStart = convertStringToInstant(cdrDTO.getTimestampStart());
-        Instant timestampStop = convertStringToInstant(cdrDTO.getTimestampStop());
+        Long meter = meterStop - meterStart;
+        Instant timestampStart = convertStringToInstant(timestampStartStr);
+        Instant timestampStop = convertStringToInstant(timestampStopStr);
+
+        if (timestampStart.compareTo(timestampStop) >= 0)
+            throw new ValueProvidedNotCorrectException("start time is passed stop time!");
 
         Long duration = timestampStop.getEpochSecond() - timestampStart.getEpochSecond();
         Long days = duration / DAY_SECS;
@@ -68,9 +95,14 @@ public class RateService {
     }
 
     public Instant convertStringToInstant(String instant) {
-        TemporalAccessor ta = DateTimeFormatter.ISO_INSTANT.parse(instant);
-        Instant i = Instant.from(ta);
-        return i;
+        try {
+            TemporalAccessor ta = DateTimeFormatter.ISO_INSTANT.parse(instant);
+            Instant i = Instant.from(ta);
+            return i;
+        } catch (Exception e) {
+            throw new ValueProvidedNotCorrectException("time pattern given is not ISO8610!");
+        }
+
     }
 
 

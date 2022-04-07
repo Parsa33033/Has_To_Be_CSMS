@@ -5,4 +5,4 @@ logging:
   file:
     name: csms.log
   level:
-    api.hastobe.csms: debug
+    api.hastobe.csms: info
