@@ -28,9 +28,9 @@
     
 
 ## Scale
-1) Around 6.75 million cars around the world
-2) There are 96,536 charging stations around the world
-3) Assume 24 cars get charged by each Charging Station
+1) There are Around 6.75 million EVs around the world
+2) There are 96,536 charging stations (EVSEs) around the world
+3) We can Assume 24 cars get charged by each Charging Station
 4) 24 * 100,000 = 2400000 charges per day
 5) 2400000 * 365 = 876000000 charges per year (Charge Detail Records per year)
 
