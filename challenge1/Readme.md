@@ -38,7 +38,7 @@
     `C:/challenge1/target> java -jar csms-0.0.1-SNAPSHOT.jar`
    
 
-##Endpoints
+## Endpoints
 
 base url: http://localhost:8080
 
