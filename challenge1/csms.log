@@ -389,3 +389,272 @@
 2022-04-07 18:39:34.792  INFO 15660 --- [RMI TCP Connection(1)-192.168.152.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-04-07 18:39:34.793  INFO 15660 --- [RMI TCP Connection(1)-192.168.152.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-04-07 18:39:34.795  INFO 15660 --- [RMI TCP Connection(1)-192.168.152.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-07 22:58:31.571  INFO 20044 --- [main] api.hastobe.csms.CsmsApplication         : Starting CsmsApplication using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 20044 (D:\Projects\HasToBe\has_to_be_csms\challenge1\target\classes started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 22:58:31.668  INFO 20044 --- [main] api.hastobe.csms.CsmsApplication         : The following 1 profile is active: "prod"
+2022-04-07 22:58:33.194  INFO 20044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-07 22:58:33.206  INFO 20044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-07 22:58:33.207  INFO 20044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-07 22:58:33.490  INFO 20044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-07 22:58:33.491  INFO 20044 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1759 ms
+2022-04-07 22:58:34.386  INFO 20044 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 22:58:34.429  WARN 20044 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-04-07 22:58:34.436  INFO 20044 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-07 22:58:34.456  INFO 20044 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-07 22:58:34.477 ERROR 20044 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-04-07 22:58:48.761  INFO 19956 --- [main] api.hastobe.csms.CsmsApplication         : Starting CsmsApplication using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 19956 (D:\Projects\HasToBe\has_to_be_csms\challenge1\target\classes started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 22:58:48.766  INFO 19956 --- [main] api.hastobe.csms.CsmsApplication         : The following 1 profile is active: "prod"
+2022-04-07 22:58:50.219  INFO 19956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-07 22:58:50.228  INFO 19956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-07 22:58:50.228  INFO 19956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-07 22:58:50.413  INFO 19956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-07 22:58:50.413  INFO 19956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1563 ms
+2022-04-07 22:58:51.198  INFO 19956 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 22:58:51.250  INFO 19956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-07 22:58:51.266  INFO 19956 --- [main] api.hastobe.csms.CsmsApplication         : Started CsmsApplication in 3.215 seconds (JVM running for 4.986)
+2022-04-07 22:58:52.596  INFO 19956 --- [RMI TCP Connection(2)-10.8.0.59] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-07 22:58:52.596  INFO 19956 --- [RMI TCP Connection(2)-10.8.0.59] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-07 22:58:52.598  INFO 19956 --- [RMI TCP Connection(2)-10.8.0.59] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-07 23:00:17.887  INFO 19148 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 19148 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:00:17.890  INFO 19148 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:00:21.880  INFO 19148 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:00:21.880  INFO 19148 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:00:21.892  INFO 19148 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:00:21.938  INFO 19148 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 58 ms
+2022-04-07 23:00:22.005  INFO 19148 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.927 seconds (JVM running for 6.836)
+2022-04-07 23:00:22.737 ERROR 19148 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:00:22.738 ERROR 19148 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:00:37.756  INFO 22692 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 22692 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:00:37.758  INFO 22692 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:00:41.530  INFO 22692 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:00:41.531  INFO 22692 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:00:41.543  INFO 22692 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:00:41.588  INFO 22692 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 57 ms
+2022-04-07 23:00:41.651  INFO 22692 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.562 seconds (JVM running for 6.301)
+2022-04-07 23:00:42.343 ERROR 22692 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:00:42.344 ERROR 22692 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:02:57.721  INFO 22804 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 22804 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:02:57.723  INFO 22804 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:03:01.589  INFO 22804 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:03:01.590  INFO 22804 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:03:01.605  INFO 22804 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:03:01.662  INFO 22804 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 72 ms
+2022-04-07 23:03:01.721  INFO 22804 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.702 seconds (JVM running for 6.332)
+2022-04-07 23:03:02.450 ERROR 22804 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:03:02.451 ERROR 22804 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:03:02.522 ERROR 22804 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:03:02.523 ERROR 22804 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:03:19.584  INFO 3084 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 3084 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:03:19.587  INFO 3084 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:03:23.225  INFO 3084 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:03:23.226  INFO 3084 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:03:23.242  INFO 3084 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:03:23.290  INFO 3084 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 64 ms
+2022-04-07 23:03:23.351  INFO 3084 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.437 seconds (JVM running for 6.122)
+2022-04-07 23:03:24.013 ERROR 3084 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:03:24.014 ERROR 3084 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:04:29.580  INFO 8132 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 8132 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:04:29.582  INFO 8132 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:04:33.302  INFO 8132 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:04:33.302  INFO 8132 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:04:33.316  INFO 8132 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:04:33.366  INFO 8132 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 64 ms
+2022-04-07 23:04:33.428  INFO 8132 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.506 seconds (JVM running for 6.104)
+2022-04-07 23:04:34.122 ERROR 8132 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:04:34.122 ERROR 8132 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:04:34.196 ERROR 8132 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:04:34.197 ERROR 8132 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:04:34.212 ERROR 8132 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:04:34.212 ERROR 8132 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:04:55.652  INFO 23196 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 23196 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:04:55.654  INFO 23196 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:04:59.445  INFO 23196 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:04:59.445  INFO 23196 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:04:59.459  INFO 23196 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:04:59.506  INFO 23196 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 61 ms
+2022-04-07 23:04:59.573  INFO 23196 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.587 seconds (JVM running for 6.239)
+2022-04-07 23:05:00.264 ERROR 23196 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:05:00.264 ERROR 23196 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:05:00.333 ERROR 23196 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:05:00.333 ERROR 23196 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:05:00.349 ERROR 23196 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:05:00.350 ERROR 23196 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:05:35.738  INFO 2412 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 2412 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:05:35.740  INFO 2412 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:05:39.720  INFO 2412 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:05:39.720  INFO 2412 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:05:39.732  INFO 2412 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:05:39.777  INFO 2412 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 56 ms
+2022-04-07 23:05:39.831  INFO 2412 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.862 seconds (JVM running for 6.536)
+2022-04-07 23:05:40.543 ERROR 2412 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:05:40.543 ERROR 2412 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:05:40.587 ERROR 2412 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:05:40.588 ERROR 2412 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:05:40.599 ERROR 2412 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:05:40.600 ERROR 2412 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:05:54.623  INFO 23084 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 23084 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:05:54.625  INFO 23084 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:05:58.254  INFO 23084 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:05:58.255  INFO 23084 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:05:58.273  INFO 23084 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:05:58.327  INFO 23084 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 71 ms
+2022-04-07 23:05:58.395  INFO 23084 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.428 seconds (JVM running for 6.033)
+2022-04-07 23:05:59.028 ERROR 23084 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:05:59.028 ERROR 23084 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:05:59.105 ERROR 23084 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:05:59.106 ERROR 23084 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:05:59.118 ERROR 23084 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:05:59.118 ERROR 23084 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:08:19.086  INFO 18168 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 18168 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:08:19.087  INFO 18168 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:08:23.004  INFO 18168 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:08:23.005  INFO 18168 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:08:23.024  INFO 18168 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:08:23.077  INFO 18168 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 72 ms
+2022-04-07 23:08:23.147  INFO 18168 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.702 seconds (JVM running for 6.351)
+2022-04-07 23:08:23.837 ERROR 18168 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:08:23.837 ERROR 18168 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:08:23.902 ERROR 18168 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:08:23.903 ERROR 18168 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:08:23.915 ERROR 18168 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:08:23.916 ERROR 18168 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:08:54.055  INFO 24556 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 24556 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:08:54.056  INFO 24556 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:08:57.796  INFO 24556 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:08:57.797  INFO 24556 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:08:57.810  INFO 24556 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:08:57.855  INFO 24556 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 58 ms
+2022-04-07 23:08:57.920  INFO 24556 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.511 seconds (JVM running for 6.149)
+2022-04-07 23:08:58.656 ERROR 24556 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:08:58.657 ERROR 24556 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:08:58.702 ERROR 24556 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:08:58.703 ERROR 24556 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:08:58.717 ERROR 24556 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:08:58.717 ERROR 24556 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:08:58.746  INFO 24556 --- [main] api.hastobe.csms.service.RateService     : -------------> -1
+2022-04-07 23:09:42.458  INFO 22316 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 22316 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:09:42.460  INFO 22316 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:09:46.204  INFO 22316 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:09:46.205  INFO 22316 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:09:46.221  INFO 22316 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:09:46.267  INFO 22316 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 62 ms
+2022-04-07 23:09:46.327  INFO 22316 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.599 seconds (JVM running for 6.556)
+2022-04-07 23:09:47.081 ERROR 22316 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:09:47.081 ERROR 22316 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:09:47.152 ERROR 22316 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:09:47.153 ERROR 22316 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:09:47.168 ERROR 22316 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:09:47.168 ERROR 22316 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:09:47.196  INFO 22316 --- [main] api.hastobe.csms.service.RateService     : -------------> -1
+2022-04-07 23:10:30.587  INFO 4900 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 4900 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:10:30.589  INFO 4900 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:10:34.471  INFO 4900 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:10:34.472  INFO 4900 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:10:34.488  INFO 4900 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:10:34.535  INFO 4900 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 62 ms
+2022-04-07 23:10:34.614  INFO 4900 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.868 seconds (JVM running for 6.612)
+2022-04-07 23:10:35.342 ERROR 4900 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:10:35.343 ERROR 4900 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:10:35.412 ERROR 4900 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:10:35.413 ERROR 4900 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:10:35.424 ERROR 4900 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:10:35.431 ERROR 4900 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:10:35.455  INFO 4900 --- [main] api.hastobe.csms.service.RateService     : -------------> -1 2021-04-05T10:04:00Z 2021-04-05T11:27:00Z
+2022-04-07 23:12:09.455  INFO 23416 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 23416 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:12:09.457  INFO 23416 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:12:13.170  INFO 23416 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:12:13.170  INFO 23416 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:12:13.186  INFO 23416 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:12:13.232  INFO 23416 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 61 ms
+2022-04-07 23:12:13.298  INFO 23416 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.491 seconds (JVM running for 6.106)
+2022-04-07 23:12:13.981 ERROR 23416 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:12:13.982 ERROR 23416 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:13:33.457  INFO 10500 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 10500 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:13:33.459  INFO 10500 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:13:37.155  INFO 10500 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:13:37.155  INFO 10500 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:13:37.170  INFO 10500 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:13:37.216  INFO 10500 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 61 ms
+2022-04-07 23:13:37.285  INFO 10500 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.486 seconds (JVM running for 6.094)
+2022-04-07 23:13:37.971  INFO 10500 --- [main] api.hastobe.csms.service.RateService     : -------------> 1 2022-04-05T11:27:00Z 2021-04-05T11:27:00Z
+2022-04-07 23:13:37.976 ERROR 10500 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:13:37.976 ERROR 10500 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:14:07.388  INFO 19448 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 19448 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:14:07.390  INFO 19448 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:14:11.315  INFO 19448 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:14:11.315  INFO 19448 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:14:11.329  INFO 19448 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:14:11.384  INFO 19448 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 68 ms
+2022-04-07 23:14:11.449  INFO 19448 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.716 seconds (JVM running for 6.384)
+2022-04-07 23:14:12.139  INFO 19448 --- [main] api.hastobe.csms.service.RateService     : -------------> -1 2020-04-05T11:27:00Z 2021-04-05T11:27:00Z
+2022-04-07 23:15:14.603  INFO 25204 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 25204 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:15:14.605  INFO 25204 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:15:18.585  INFO 25204 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:15:18.586  INFO 25204 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:15:18.598  INFO 25204 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:15:18.648  INFO 25204 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 62 ms
+2022-04-07 23:15:18.706  INFO 25204 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.766 seconds (JVM running for 6.447)
+2022-04-07 23:15:19.423  INFO 25204 --- [main] api.hastobe.csms.service.RateService     : -------------> 1 2022-04-05T11:27:00Z 2021-04-05T11:27:00Z
+2022-04-07 23:15:19.427 ERROR 25204 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:15:19.427 ERROR 25204 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:19:48.673  INFO 25260 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 25260 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:19:48.675  INFO 25260 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:19:52.417  INFO 25260 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:19:52.418  INFO 25260 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:19:52.432  INFO 25260 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:19:52.492  INFO 25260 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 74 ms
+2022-04-07 23:19:52.554  INFO 25260 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.552 seconds (JVM running for 6.183)
+2022-04-07 23:19:53.234 ERROR 25260 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:19:53.234 ERROR 25260 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:19:53.304 ERROR 25260 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:19:53.304 ERROR 25260 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:19:53.328  INFO 25260 --- [main] api.hastobe.csms.service.RateService     : -------------> 1 2022-04-05T11:27:00Z 2021-04-05T11:27:00Z
+2022-04-07 23:19:53.331 ERROR 25260 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:19:53.331 ERROR 25260 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:19:53.342 ERROR 25260 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:19:53.343 ERROR 25260 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:19:53.369  INFO 25260 --- [main] api.hastobe.csms.service.RateService     : -------------> -1 2021-04-05T10:04:00Z 2021-04-05T11:27:00Z
+2022-04-07 23:23:38.571  INFO 22692 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 22692 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:23:38.574  INFO 22692 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:23:42.504  INFO 22692 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:23:42.505  INFO 22692 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:23:42.519  INFO 22692 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:23:42.574  INFO 22692 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 69 ms
+2022-04-07 23:23:42.641  INFO 22692 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.728 seconds (JVM running for 6.344)
+2022-04-07 23:23:43.302 ERROR 22692 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:23:43.303 ERROR 22692 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:23:43.369 ERROR 22692 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:23:43.370 ERROR 22692 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:23:43.398 ERROR 22692 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:23:43.398 ERROR 22692 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:23:43.413 ERROR 22692 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:23:43.414 ERROR 22692 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:24:21.885  INFO 24648 --- [main] api.hastobe.csms.RateServiceTests        : Starting RateServiceTests using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 24648 (started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 23:24:21.887  INFO 24648 --- [main] api.hastobe.csms.RateServiceTests        : The following 1 profile is active: "prod"
+2022-04-07 23:24:25.341  INFO 24648 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-04-07 23:24:25.341  INFO 24648 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-04-07 23:24:25.356  INFO 24648 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 23:24:25.412  INFO 24648 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 71 ms
+2022-04-07 23:24:25.471  INFO 24648 --- [main] api.hastobe.csms.RateServiceTests        : Started RateServiceTests in 4.265 seconds (JVM running for 5.747)
+2022-04-07 23:24:26.107 ERROR 24648 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:24:26.107 ERROR 24648 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:24:26.153 ERROR 24648 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:24:26.153 ERROR 24648 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:24:26.178 ERROR 24648 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:24:26.179 ERROR 24648 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
+2022-04-07 23:24:26.189 ERROR 24648 --- [main] api.hastobe.csms.service.RateService     : ----> An Error was occurred!
+2022-04-07 23:24:26.189 ERROR 24648 --- [main] api.hastobe.csms.rest.RateController     : ----> An Error was occurred!
