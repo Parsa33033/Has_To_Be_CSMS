@@ -1,0 +1,59 @@
+2022-04-07 17:30:50.106  INFO 21164 --- [main] api.hastobe.csms.CsmsApplication         : Starting CsmsApplication using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 21164 (D:\Projects\HasToBe\has_to_be_csms\challenge1\target\classes started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 17:30:50.112 DEBUG 21164 --- [main] api.hastobe.csms.CsmsApplication         : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-07 17:30:50.113  INFO 21164 --- [main] api.hastobe.csms.CsmsApplication         : The following 1 profile is active: "prod"
+2022-04-07 17:30:51.974  INFO 21164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-07 17:30:51.984  INFO 21164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-07 17:30:52.538  INFO 21164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-07 17:30:52.816  INFO 21164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-07 17:30:52.817  INFO 21164 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2619 ms
+2022-04-07 17:30:53.787  INFO 21164 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 17:30:53.846  INFO 21164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-07 17:30:53.866  INFO 21164 --- [main] api.hastobe.csms.CsmsApplication         : Started CsmsApplication in 4.644 seconds (JVM running for 6.499)
+2022-04-07 17:30:55.698  INFO 21164 --- [RMI TCP Connection(4)-10.8.0.45] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-07 17:30:55.699  INFO 21164 --- [RMI TCP Connection(4)-10.8.0.45] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-07 17:30:55.702  INFO 21164 --- [RMI TCP Connection(4)-10.8.0.45] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-04-07 17:31:04.499 DEBUG 21164 --- [http-nio-8080-exec-2] api.hastobe.csms.rest.RateController     : ----> Entered rate with [RateInputDTO{rate=RateDTO{energy=0.300, time=2.000, transaction=1.000}, cdr=CdrDTO{meterStart=1204307, timestampStart='2021-04-05T10:04:00Z', meterStop=1215230, timestampStop='2022-04-05T11:27:00Z'}}]
+2022-04-07 17:31:04.509 DEBUG 21164 --- [http-nio-8080-exec-2] api.hastobe.csms.service.RateService     : ----> Entered calculateRates with [RateInputDTO{rate=RateDTO{energy=0.300, time=2.000, transaction=1.000}, cdr=CdrDTO{meterStart=1204307, timestampStart='2021-04-05T10:04:00Z', meterStop=1215230, timestampStop='2022-04-05T11:27:00Z'}}]
+2022-04-07 17:31:04.521 DEBUG 21164 --- [http-nio-8080-exec-2] a.h.csms.service.mapper.RateMapperImpl   : ----> Entered toEntity with [RateDTO{energy=0.300, time=2.000, transaction=1.000}]
+2022-04-07 17:31:04.537 DEBUG 21164 --- [http-nio-8080-exec-2] a.h.csms.service.mapper.RateMapperImpl   : ----> Exiting toEntity with results: Rate{energy=0.3, time=2.0, transaction=1.0}
+2022-04-07 17:31:04.541 DEBUG 21164 --- [http-nio-8080-exec-2] a.h.csms.service.mapper.RateMapperImpl   : ----> Entered toDto with [Rate{energy=3.2769, time=17522.768, transaction=1.0}]
+2022-04-07 17:31:04.543 DEBUG 21164 --- [http-nio-8080-exec-2] a.h.csms.service.mapper.RateMapperImpl   : ----> Exiting toDto with results: RateDTO{energy=3.277, time=17522.768, transaction=1.000}
+2022-04-07 17:31:04.544 DEBUG 21164 --- [http-nio-8080-exec-2] api.hastobe.csms.service.RateService     : ----> Exiting calculateRates with results: RateOutputDTO{total=17527.04, component=RateDTO{energy=3.277, time=17522.768, transaction=1.000}}
+2022-04-07 17:31:04.549 DEBUG 21164 --- [http-nio-8080-exec-2] api.hastobe.csms.rest.RateController     : ----> Exiting rate with results: <200 OK OK,RateOutputDTO{total=17527.04, component=RateDTO{energy=3.277, time=17522.768, transaction=1.000}},[]>
+2022-04-07 17:32:31.549  INFO 22052 --- [main] api.hastobe.csms.CsmsApplication         : Starting CsmsApplication using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 22052 (D:\Projects\HasToBe\has_to_be_csms\challenge1\target\classes started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 17:32:31.554 DEBUG 22052 --- [main] api.hastobe.csms.CsmsApplication         : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-07 17:32:31.555  INFO 22052 --- [main] api.hastobe.csms.CsmsApplication         : The following 1 profile is active: "prod"
+2022-04-07 17:32:33.832  INFO 22052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-07 17:32:33.856  INFO 22052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-07 17:32:33.857  INFO 22052 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-07 17:32:34.338  INFO 22052 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-07 17:32:34.340  INFO 22052 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2706 ms
+2022-04-07 17:32:35.621  INFO 22052 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 17:32:35.716  INFO 22052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-07 17:32:35.760  INFO 22052 --- [main] api.hastobe.csms.CsmsApplication         : Started CsmsApplication in 5.16 seconds (JVM running for 7.101)
+2022-04-07 17:32:36.961  INFO 22052 --- [RMI TCP Connection(1)-10.8.0.45] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-07 17:32:36.962  INFO 22052 --- [RMI TCP Connection(1)-10.8.0.45] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-07 17:32:36.966  INFO 22052 --- [RMI TCP Connection(1)-10.8.0.45] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-04-07 17:35:09.907  INFO 17652 --- [main] api.hastobe.csms.CsmsApplication         : Starting CsmsApplication using Java 1.8.0_261 on DESKTOP-13E3S4R with PID 17652 (D:\Projects\HasToBe\has_to_be_csms\challenge1\target\classes started by Parsa33033 in D:\Projects\HasToBe\has_to_be_csms\challenge1)
+2022-04-07 17:35:09.912 DEBUG 17652 --- [main] api.hastobe.csms.CsmsApplication         : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-07 17:35:09.913  INFO 17652 --- [main] api.hastobe.csms.CsmsApplication         : The following 1 profile is active: "prod"
+2022-04-07 17:35:11.886  INFO 17652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-07 17:35:11.897  INFO 17652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-07 17:35:11.898  INFO 17652 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-07 17:35:12.169  INFO 17652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-07 17:35:12.169  INFO 17652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2190 ms
+2022-04-07 17:35:13.707  INFO 17652 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-07 17:35:13.767  INFO 17652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-07 17:35:13.787  INFO 17652 --- [main] api.hastobe.csms.CsmsApplication         : Started CsmsApplication in 4.738 seconds (JVM running for 6.736)
+2022-04-07 17:35:15.864  INFO 17652 --- [RMI TCP Connection(2)-10.8.0.45] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-07 17:35:15.865  INFO 17652 --- [RMI TCP Connection(2)-10.8.0.45] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-07 17:35:15.866  INFO 17652 --- [RMI TCP Connection(2)-10.8.0.45] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-07 17:35:58.530 DEBUG 17652 --- [http-nio-8080-exec-2] api.hastobe.csms.rest.RateController     : ----> Entered rate with [RateInputDTO{rate=RateDTO{energy=0.300, time=2.000, transaction=1.000}, cdr=CdrDTO{meterStart=1204307, timestampStart='2021-04-05T10:04:00Z', meterStop=1215230, timestampStop='2022-04-05T11:27:00Z'}}]
+2022-04-07 17:35:58.543 DEBUG 17652 --- [http-nio-8080-exec-2] api.hastobe.csms.service.RateService     : ----> Entered calculateRates with [RateInputDTO{rate=RateDTO{energy=0.300, time=2.000, transaction=1.000}, cdr=CdrDTO{meterStart=1204307, timestampStart='2021-04-05T10:04:00Z', meterStop=1215230, timestampStop='2022-04-05T11:27:00Z'}}]
+2022-04-07 17:35:58.556 DEBUG 17652 --- [http-nio-8080-exec-2] a.h.csms.service.mapper.RateMapperImpl   : ----> Entered toEntity with [RateDTO{energy=0.300, time=2.000, transaction=1.000}]
+2022-04-07 17:35:58.573 DEBUG 17652 --- [http-nio-8080-exec-2] a.h.csms.service.mapper.RateMapperImpl   : ----> Exiting toEntity with results: Rate{energy=0.3, time=2.0, transaction=1.0}
+2022-04-07 17:35:58.578  INFO 17652 --- [http-nio-8080-exec-2] api.hastobe.csms.service.RateService     : -------------=====> 365 1 23 8761.384
+2022-04-07 17:35:58.578 DEBUG 17652 --- [http-nio-8080-exec-2] a.h.csms.service.mapper.RateMapperImpl   : ----> Entered toDto with [Rate{energy=3.2769, time=17522.768, transaction=1.0}]
+2022-04-07 17:35:58.579 DEBUG 17652 --- [http-nio-8080-exec-2] a.h.csms.service.mapper.RateMapperImpl   : ----> Exiting toDto with results: RateDTO{energy=3.277, time=17522.768, transaction=1.000}
+2022-04-07 17:35:58.580 DEBUG 17652 --- [http-nio-8080-exec-2] api.hastobe.csms.service.RateService     : ----> Exiting calculateRates with results: RateOutputDTO{total=17527.04, component=RateDTO{energy=3.277, time=17522.768, transaction=1.000}}
+2022-04-07 17:35:58.585 DEBUG 17652 --- [http-nio-8080-exec-2] api.hastobe.csms.rest.RateController     : ----> Exiting rate with results: <200 OK OK,RateOutputDTO{total=17527.04, component=RateDTO{energy=3.277, time=17522.768, transaction=1.000}},[]>
